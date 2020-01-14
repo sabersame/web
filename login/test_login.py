@@ -16,6 +16,7 @@ class Test_login:
         self.d.start_operation("http://jfzy.eastedu.test/#/login")
 
     def teardown_class(self):
+        self.d.end_log()
         self.d.close_operation()
 
     @pytest.mark.run(order=1)
