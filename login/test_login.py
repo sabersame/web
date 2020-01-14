@@ -20,7 +20,7 @@ class Test_login:
         self.d.close_operation()
 
     @pytest.mark.run(order=1)
-    @pytest.mark.parametrize(argnames="username", argvalues=data_list["e_username"])
+    @pytest.mark.parametrize(argnames="username1", argvalues=data_list["e_username"])
     @pytest.mark.parametrize(argnames="passwd", argvalues=data_list["e_passwd"])
     def test_error_login(self, username, passwd, case_name="login_error"):
         self.d.username_input_input(case_name, username)
