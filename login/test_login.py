@@ -4,9 +4,6 @@ from public.Data_Unit import Data_Base
 
 
 class Test_login:
-    """
-    GitHub GUI测试的运行
-    """
     data_list = Data_Base("login").result
 
     def setup_class(self):
