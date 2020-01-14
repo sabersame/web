@@ -14,7 +14,7 @@ class Case_Login(Base_Base):
 
     def username_input_input(self, case_name, username):
         # 用户名
-        self.input(case_name, 'xpath', '//*[@id="app-el"]/div/div/div/div[2]/div/div[2]/input1', username)
+        self.input(case_name, 'xpath', '//*[@id="app-el"]/div/div/div/div[2]/div/div[2]/input', username)
 
     def passwd_input_input(self, case_name, passwd):
         # 密码
