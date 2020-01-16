@@ -10,7 +10,7 @@ class Case_Login(Base_Base):
 
     def start_operation(self, url):
         # 开启浏览器
-        self.start(url)
+        self._start(url)
 
     def username_input_input(self, case_name, username):
         # 用户名
